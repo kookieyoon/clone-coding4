@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400&display=swap');
+*{
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    margin: 0; padding: 0;
+    text-transform: capitalize;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(https://source.unsplash.com/random/1920x1080/?nature);
+    background-size: cover;
+    background-position: center;
+}
+article{
+    background-color: rgba(255, 255, 255, 0.57);
+    font-weight: 300;
+    font-size: 1.2em;
+    color: black;
+    max-width: 20em;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5em;
+}
+.control{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1.5em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Noto Sans', sans-serif;
+}
+.control li{
+    display: inline-block;
+    padding: 0 0.5em;
+}
+.control a{
+    color: white;
+    text-decoration: none;
+}
+.control>*{
+    display: inline-block;
+}
+.control nav a:hover{
+    border-bottom: solid 1px silver;
+}
+.control .player{
+    position: absolute;
+    right: 1.3em;
+}
+.control .player a{
+    font-size: 1.2em;
+}
+.control .player a:hover{
+    color: black;
+}
+.control .player span{
+    display: none;
+}
